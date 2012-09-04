@@ -20,7 +20,7 @@ int main(int argc, const char * argv[])
         if ([arguments count] < 2) {
             // get some input
             NSFileHandle* console = [NSFileHandle fileHandleWithStandardInput];
-            NSLog(@"Enter a word: ");
+            printf("Enter a word: ");
             NSData* data = [console availableData];
             if(data != nil) {
                 input = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
